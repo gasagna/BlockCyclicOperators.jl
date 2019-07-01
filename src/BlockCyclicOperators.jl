@@ -4,7 +4,11 @@ import LinearAlgebra
 
 export BlockCyclicOperator
 
-# utils
+"""
+    ithblock(i::Int, n::Int)
+
+Short-hand for the range `((i-1)*n + 1):(i*n)`
+"""
 ithblock(i::Int, n::Int) = ((i-1)*n + 1):(i*n)
 
 # block cyclic matrix
